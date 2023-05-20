@@ -22,13 +22,8 @@ After this, start your oobabooga text generation webui instance with an instruct
 
 Finally start the powerpoint generator by running:
 ```
-python3 powerpointer.py
+python3 powerpointer.py 
 ```
-# Demo screenshots:
-Here are some screenshots from the generated powerpoints:
-![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample.png)
-![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample2.png)
-![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/Example_run.png)
 
 # Known issues:
 Because of the limitation of "small and sometimes dumb" local models:
@@ -39,3 +34,10 @@ Because of the limitation of "small and sometimes dumb" local models:
 Please report any issues and feel free to make a pull request to fix my code I wrote late at night.
 
 Made by CyberTimon (timon@cybertimon.ch)
+
+# Demo screenshots:
+Here are some screenshots from the local generated powerpoints:
+
+![alt text](https://raw.githubusercontent.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample.png)
+![alt text](https://raw.githubusercontent.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample2.png)
+![alt text](https://raw.githubusercontent.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/Example_run.png)
