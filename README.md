@@ -2,7 +2,6 @@
 This is a PowerPoint generator that uses Python-pptx and local llm's using the oobabooga api to generate beautiful and informative presentations. 
 Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within powerpoint. It also makes placeholders for images.
 You can even select between 7 designs to make the powerpoints more beautiful. 
-To see some generated powerpoints, look at my below linked powerpointer which uses gpt 3.5. This is more production ready than this. 
 
 This is a port from my powerpointer which uses the gpt 3.5 openai api: [Powerpointer](https://github.com/CyberTimon/powerpointer)
 The goal was to have this running completely local with no costs using for example a LLaMA based model. 
@@ -25,6 +24,11 @@ Finally start the powerpoint generator by running:
 ```
 python3 powerpointer.py
 ```
+# Demo screenshots:
+Here are some screenshots from the generated powerpoints:
+![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample.png)
+![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/AI_sample2.png)
+![alt text](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs/main/Examples/Example_run.png)
 
 # Known issues:
 Because of the limitation of "small and sometimes dumb" local models:
