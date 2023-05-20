@@ -1,4 +1,4 @@
-# PowerPoint Generator using python-pptx and local llm's using the oobabooga api.
+# PowerPoint Generator using python-pptx and local language models.
 This is a PowerPoint generator that uses Python-pptx and local llm's using the oobabooga api to generate beautiful and informative presentations. 
 Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within powerpoint. It also makes placeholders for images.
 You can even select between 7 designs to make the powerpoints more beautiful. 
