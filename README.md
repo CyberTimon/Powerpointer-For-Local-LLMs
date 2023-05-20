@@ -4,7 +4,7 @@ Powerpointer doesn't use MARP. It directly creates the powerpoints so you can ea
 You can even select between 7 designs to make the powerpoints more beautiful. 
 
 This is a port from my powerpointer which uses the gpt 3.5 openai api: [Powerpointer](https://github.com/CyberTimon/powerpointer)
-The goal was to have this running completely local with no costs using for example a LLaMA based model. 
+The goal was to have this running completely local with no costs using for example a LLaMA based model. You can support this by giving this repo a star!
 
 I optimized the prompts to work with the vicuna and alpaca like models. You can select the model type in the powerpointer.py file or can create a new prompt format in the pormpts.py file.
 
@@ -19,6 +19,8 @@ To make this work, clone the repository and install the following packages:
 pip install python-pptx regex collection
 ```
 After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--api). 13B models and upwards work the best but you sometimes also receive good output with 7B models.
+
+If you run oobabooga on a remote machine or not on a different port/ip, you have to open powerpointer.py and change the HOST or URL variable. When you are there, also make sure that the model_type for the prompt format is set correctly. (Vicuna or Alpaca)
 
 Finally start the powerpoint generator by running:
 ```
