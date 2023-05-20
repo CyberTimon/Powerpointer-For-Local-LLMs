@@ -1,5 +1,5 @@
-# PowerPoint Generator using python-pptx and local language models.
-This is a PowerPoint generator that uses Python-pptx and local llm's using the oobabooga api to generate beautiful and informative presentations. 
+# PowerPoint generator using python-pptx and local large language models.
+This is a PowerPoint generator that uses python-pptx and local llm's using the oobabooga text generation webui api to generate beautiful and informative presentations. 
 Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within powerpoint. It also makes placeholders for images.
 You can even select between 7 designs to make the powerpoints more beautiful. 
 
@@ -10,8 +10,8 @@ I optimized the prompts to work with the vicuna and alpaca like models. You can 
 
 # How it works:
 - It asks the user about the informations of the powerpoint
-- Then it generates the text for the powerpoint using some "hacky" prompts
-- The Python-pptx library converts the generated text using my powerpoint format into a PowerPoint presentation
+- Then it generates the text for the powerpoint using some "hacky" prompts and the text generation webui api
+- The python-pptx library converts the generated text using my powerpoint format into a PowerPoint presentation
 
 # How to use this:
 To make this work, clone the repository and install the following packages: 
@@ -33,7 +33,7 @@ Because of the limitation of "small and sometimes dumb" local models:
 - the generator sometimes ignores the selected slide count
 - the generator sometimes forgets to include the additional info
 
-Please report any issues and feel free to make a pull request to fix my code I wrote late at night.
+Please report any issues and feel free to make a pull request to fix my code I wrote at night.
 
 Made by CyberTimon (timon@cybertimon.ch)
 
