@@ -26,6 +26,12 @@ Finally start the powerpoint generator by running:
 python3 powerpointer.py
 ```
 
+# Known issues:
+Because of the limitation of "small and sometimes dumb" local models:
+- the generator easily hallucinates things
+- the generator sometimes ignores the selected slide count
+- the generator sometimes forgets to include the additional info
+
 Please report any issues and feel free to make a pull request to fix my code I wrote late at night.
 
 Made by CyberTimon (timon@cybertimon.ch)
