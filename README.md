@@ -33,6 +33,9 @@ Because of the limitation of "small and sometimes dumb" local models:
 - the generator sometimes ignores the selected slide count
 - the generator sometimes forgets to include the additional info
 
+Because of my "pro" code:
+- it's complicated to add new templates. I'm searching for an easier way
+
 Please report any issues and feel free to make a pull request to fix my code I wrote at night.
 
 Made by CyberTimon (timon@cybertimon.ch)
