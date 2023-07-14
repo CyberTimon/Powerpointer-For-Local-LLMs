@@ -18,7 +18,7 @@ To make this work, clone the repository and install the following packages:
 ```
 pip install python-pptx regex collection
 ```
-After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--api). 13B models and upwards work the best but you sometimes also receive good output with 7B models.
+After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--extensions api). 13B models and upwards work the best but you sometimes also receive good output with 7B models.
 
 If you run oobabooga on a remote machine or not on a different port/ip, you have to open powerpointer.py and change the HOST or URL variable. When you are there, also make sure that the model_type for the prompt format is set correctly. (Vicuna or Alpaca)
 
