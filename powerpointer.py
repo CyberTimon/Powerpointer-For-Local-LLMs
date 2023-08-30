@@ -18,7 +18,7 @@ import prompts
 #Design 7 = Black, white
 
 model_type = "vicuna" # or "alpaca", depending on your loaded model in oobabooga. This will set the correct prompt format.
-HOST = "localhost:5000" # Set this to your local llm api host/port. Start oobabooga with --api and it will start the api at port 5000 (default)
+HOST = "localhost:5000" # Set this to your local llm api host/port. Start oobabooga with --extensions api and it will start the api at port 5000 (default)
 URL = f"http://{HOST}/api/v1/generate"
 
 def create_ppt_text(prompt, slides, info=""):
