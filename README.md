@@ -1,24 +1,24 @@
 # PowerPoint generator using python-pptx and local large language models.
-This is a PowerPoint generator that uses python-pptx and local llm's using the oobabooga text generation webui api to generate beautiful and informative presentations. 
-Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within powerpoint. It also makes placeholders for images.
-You can even select between 7 designs to make the powerpoints more beautiful. 
+This is a PowerPoint generator that uses python-pptx and local llm's using the Oobabooga Text Generation WebUI api to generate beautiful and informative presentations. 
+Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within PowerPoint. It also makes placeholders for images.
+You can even select between 7 designs to make the PowerPoints more beautiful. 
 
-This is a port from my powerpointer which uses the gpt 3.5 openai api: [Powerpointer](https://github.com/CyberTimon/powerpointer)
+This is a port from my powerpointer which uses the GPT 3.5 Turbo OpenAI API: [Powerpointer](https://github.com/CyberTimon/powerpointer)
 The goal was to have this running completely local with no costs using for example a LLaMA based model. You can support this by giving this repo a star!
 
 I optimized the prompts to work with the vicuna and alpaca like models. You can select the model type in the powerpointer.py file or can create a new prompt format in the pormpts.py file.
 
 # How it works:
-- It asks the user about the informations of the powerpoint
-- Then it generates the text for the powerpoint using some "hacky" prompts and the text generation webui api
-- The python-pptx library converts the generated text using my powerpoint format into a PowerPoint presentation
+- It asks the user about the informations of the PowerPoint
+- Then it generates the text for the PowerPoint using some "hacky" prompts and the text generation webui api
+- The python-pptx library converts the generated text using my PowerPoint format into a PowerPoint presentation
 
 # How to use this:
 To make this work, clone the repository and install the following packages: 
 ```
 pip install python-pptx regex collection
 ```
-After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--extensions api). 13B models and upwards work the best but you sometimes also receive good output with 7B models.
+After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--extensions api). 13B models and upwards work the best but you sometimes also receive good output with 7B models. When using 7B models, try instruct tuned Mistral models.
 
 If you run oobabooga on a remote machine or not on a different port/ip, you have to open powerpointer.py and change the HOST or URL variable. When you are there, also make sure that the model_type for the prompt format is set correctly. (Vicuna or Alpaca)
 
