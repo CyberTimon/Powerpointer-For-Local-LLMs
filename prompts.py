@@ -12,6 +12,12 @@ def make_prompt(prompt, slide_count, additional_info, model_type):
     elif model_type == "alpaca":
         prefix = "### Instruction:"
         suffix = "### Response:"
+    elif model_type == "chatml":
+        prefix = "<|im_start|>user\n"
+        suffix = "<|im_end|>\n<|im_start|>assistant\n"
+    elif model_type == "llama2chat":
+        prefix = "[INST] "
+        suffix = " [/INST]"
     else:
         prefix = "### Instruction:"
         suffix = "### Response:"
