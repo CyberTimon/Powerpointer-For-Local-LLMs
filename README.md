@@ -1,16 +1,20 @@
-# PowerPoint generator using python-pptx and local large language models.
-This is a PowerPoint generator that uses python-pptx and local llm's using the Oobabooga Text Generation WebUI api to generate beautiful and informative presentations. 
-Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within PowerPoint. It also makes placeholders for images.
-You can even select between 7 designs to make the PowerPoints more beautiful. 
+# PowerPointer For Local LLMs
+Here is a PowerPoint generator that uses python-pptx and local llm's using the Oobabooga Text Generation WebUI api to generate beautiful and informative presentations. 
+PowerPointer "For Local LLMs" is a port from my main PowerPointer which uses the GPT 3.5 Turbo OpenAI API: [Powerpointer](https://github.com/CyberTimon/powerpointer) 
 
-This is a port from my powerpointer which uses the GPT 3.5 Turbo OpenAI API: [Powerpointer](https://github.com/CyberTimon/powerpointer)
-The goal was to have this running completely local with no costs using for example a LLaMA based model. You can support this by giving this repo a star!
+The goal was to have this running completely local with no costs using for example a LLaMA based model. 
+You can support this by giving this repo a star!
 
-I optimized the prompts to work with the vicuna and alpaca like models. You can select the model type in the powerpointer.py file or can create a new prompt format in the pormpts.py file.
+
+## Features
+ - Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within PowerPoint
+ - It also makes placeholders for images
+ - You can select between 7 designs to make the PowerPoints more beautiful
+ - Runs locally on your machine so zero privacy
 
 # How it works:
 - It asks the user about the informations of the PowerPoint
-- Then it generates the text for the PowerPoint using some "hacky" prompts and the text generation webui api
+- Then it generates the text for the PowerPoint using some optimized prompts and the text generation webui api
 - The python-pptx library converts the generated text using my PowerPoint format into a PowerPoint presentation
 
 # How to use this:
@@ -20,12 +24,32 @@ pip install python-pptx regex collection
 ```
 After this, start your oobabooga text generation webui instance with an instruct finetuned model and the api extension (--extensions api). 13B models and upwards work the best but you sometimes also receive good output with 7B models. When using 7B models, try instruct tuned Mistral models.
 
-If you run oobabooga on a remote machine or not on a different port/ip, you have to open powerpointer.py and change the HOST or URL variable. When you are there, also make sure that the model_type for the prompt format is set correctly. (Vicuna or Alpaca)
+If you run oobabooga on a remote machine or not on a different port/ip, you have to open powerpointer.py and change the HOST or URL variable. **When you are there, also make sure that the model_type ([Prompt Template](#available-prompt-templates) is set correctly.**
 
 Finally start the powerpoint generator by running:
 ```
 python3 powerpointer.py 
 ```
+
+## Available Prompt Templates
+I optimized the prompts to work with instruction tuned models. You can select the prompt format type in the powerpointer.py file. If your desired format is missing, you can create a new prompt format template in the prompts.py file.
+
+Following prompt templates are available out of the box:
+ - Alpaca
+ - ChatML
+ - Vicuna
+ - Llama2Chat
+
+Feel free to PR new ones!
+
+## Current best model
+As of today (14.02.2024) I recommend to use Nous Hermes Mixtral 8x7b DPO as this yields the best results:
+ - [GPT-Q](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GPTQ)
+ - [GGUF](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF)
+
+Keep in mind that this is quite a big model and requires a good computer to run. If you're looking for a smaller model, I can recommend Open Hermes 2.5 7B:
+ - [GPT-Q](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GPTQ)
+ - [GGUF](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF)
 
 # Known issues:
 Because of the limitation of "small and sometimes dumb" local models:
