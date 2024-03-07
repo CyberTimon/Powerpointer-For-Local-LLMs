@@ -17,7 +17,7 @@ import prompts
 #Design 6 = Multicolored, Simple
 #Design 7 = Black, white
 
-model_type = "vicuna" # or "alpaca", depending on your loaded model in oobabooga. This will set the correct prompt format.
+model_type = "vicuna" # or any other available prompt template (vicuna, alpaca, chatml or llama2chat), depending on your loaded model in oobabooga. This will set the correct prompt format.
 HOST = "localhost:5000" # Set this to your local llm api host/port. Start oobabooga with --extensions api and it will start the api at port 5000 (default)
 URL = f"http://{HOST}/api/v1/generate"
 
@@ -27,13 +27,13 @@ def create_ppt_text(prompt, slides, info=""):
     #print("Prompt for the api:\n\n" + final_prompt)
     request = {
         'prompt': final_prompt,
-        'max_new_tokens': 2048,
+        'max_new_tokens': 4096,
         'do_sample': True,
         'temperature': 0.6,
-        'top_p': 0.1,
+        'top_p': 0.95,
         'typical_p': 1,
-        'repetition_penalty': 1.18,
-        'top_k': 50,
+        'repetition_penalty': 1.15,
+        'top_k': 40,
         'min_length': 0,
         'no_repeat_ngram_size': 0,
         'num_beams': 1,
