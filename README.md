@@ -10,7 +10,7 @@ You can support this by giving this repo a star!
  - Powerpointer doesn't use MARP. It directly creates the powerpoints so you can easily make changes to them or finish it within PowerPoint
  - It also makes placeholders for images
  - You can select between 7 designs to make the PowerPoints more beautiful
- - Runs locally on your machine so zero privacy
+ - Runs locally on your computer so there are no privacy concerns
 
 # How it works:
 - It asks the user about the informations of the PowerPoint
