@@ -47,9 +47,11 @@ As of today (14.02.2024) I recommend to use Nous Hermes Mixtral 8x7b DPO as this
  - [GPT-Q](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GPTQ)
  - [GGUF](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF)
 
-Keep in mind that this is quite a big model and requires a good computer to run. If you're looking for a smaller model, I can recommend Open Hermes 2.5 7B:
- - [GPT-Q](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GPTQ)
- - [GGUF](https://huggingface.co/TheBloke/OpenHermes-2.5-Mistral-7B-GGUF)
+Keep in mind that this is quite a big model and requires a good computer to run. If you're looking for a smaller model, I can recommend Hermes Theta 8B:
+ - [EXL2](https://huggingface.co/bartowski/Hermes-2-Theta-Llama-3-8B-exl2)
+ - [GGUF](https://huggingface.co/bartowski/Hermes-2-Theta-Llama-3-8B-GGUF)
+
+Both model use ChatML as prompt templates.
 
 # Known issues:
 Because of the limitation of "small and sometimes dumb" local models:
