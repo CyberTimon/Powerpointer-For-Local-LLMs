@@ -43,7 +43,7 @@ Following prompt templates are available out of the box:
 Feel free to PR new ones!
 
 ## Current best model
-As of today (14.02.2024) I recommend to use Nous Hermes Mixtral 8x7b DPO as this yields the best results:
+As of today (01.07.2024) I recommend to use Nous Hermes Mixtral 8x7b DPO as this yields the best results:
  - [GPT-Q](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GPTQ)
  - [GGUF](https://huggingface.co/TheBloke/Nous-Hermes-2-Mixtral-8x7B-DPO-GGUF)
 
