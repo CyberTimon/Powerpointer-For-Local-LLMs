@@ -1,0 +1,49 @@
+<think>
+Okay, the user wants a PowerPoint presentation about Fortnite. Let me start by understanding the requirements. They specified exactly 7 slides, each with a short title and content under 250 characters. The table of contents must match the slide count, and there's a summary. No links or images, just text.
+
+First, the title slide. It should be catchy. Maybe "Fortnite: The Battle Royale Phenomenon." Then the table of contents. I need to list 7 points. Let me think: Introduction, Game Features, Battle Pass, Community, Cross-Platform, Updates, Summary. That's seven.
+
+Slide 2: Introduction. Brief history, launched in 2017, developed by Epic Games. Keep it concise. Slide 3: Game Features. Mention building, variety of weapons, dynamic environment. Slide 4: Battle Pass. Explain the progression system and rewards. Slide 5: Community. Talk about events and creativity. Slide 6: Cross-Platform. Highlight play across devices. Slide 7: Updates. Regular content drops and collaborations. Then the summary slide, wrapping up key points. Need to check character counts for each content section. Make sure titles are very short. Avoid any markdown, just plain text. Let me verify each slide meets the 250 character limit. Looks good. Alright, that should cover it.
+</think>
+
+Title: Fortnite: The Battle Royale Phenomenon  
+
+Slide: 1  
+Header: TABLE OF CONTENT  
+Content: 1. Introduction  
+2. Game Features  
+3. Battle Pass  
+4. Community  
+5. Cross-Platform  
+6. Updates  
+7. Summary  
+
+Slide: 2  
+Header: INTRODUCTION  
+Content: Launched 2017 by Epic Games. Combines survival, building, and combat.  
+
+Slide: 3  
+Header: GAME FEATURES  
+Content: Dynamic environments, 100-player battles, creative building mechanics.  
+
+Slide: 4  
+Header: BATTLE PASS  
+Content: Paid subscription for exclusive rewards. Encourages regular play.  
+
+Slide: 5  
+Header: COMMUNITY  
+Content: Live events, fan creativity, and collaborations with pop culture.  
+
+Slide: 6  
+Header: CROSS-PLATFORM  
+Content: Play on PC, consoles, and mobile. Unified progress and friends.  
+
+Slide: 7  
+Header: UPDATES  
+Content: Frequent content drops, seasonal changes, and partnerships.  
+
+Slide: 8  
+Header: SUMMARY  
+Content: Fortnite blends gameplay, community, and innovation. A global phenomenon.  
+
+Slide: END
