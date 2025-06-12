@@ -21,7 +21,7 @@ import prompts
 API_HOST = "127.0.0.1"
 API_PORT = 5005
 API_URL = f"http://{API_HOST}:{API_PORT}/v1/chat/completions"
-ADDITIONAL_LLM_INSTRUCTION = "/no_think" # Can be /no_think for thinking models, so they don't output thinking tags (which breaks the pptx generator).
+ADDITIONAL_LLM_INSTRUCTION = "" # Can be "/no_think" for QWEN thinking models, so they don't output thinking tags (which breaks the pptx generator).
 
 def llm_generate(messages):
     payload = {'messages': messages, 'stream': False}
